@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="SyncfusionXlsioOrientationSample.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SyncfusionXlsioOrientationSample">
+
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout
+        Margin="20"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <Label Text="Use this button to generate a PDF from an Excel file. The document should be with Landscape orientation but it generates with Portrait orientation." />
+
+        <Button Command="{Binding GenerateCommand}" Text="Generate" />
+
+    </StackLayout>
+
+</ContentPage>
